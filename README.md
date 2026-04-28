@@ -5,6 +5,12 @@ This project is a content-based movie recommendation system that suggests simila
 
 ---
 
+## 🎯 Problem Statement
+
+Users often struggle to discover similar movies based on content. This system solves it using NLP-based similarity instead of manual search.
+
+---
+
 ## 🚀 Features
 - Data preprocessing and feature engineering
 - TF-IDF vectorization for text representation
@@ -96,7 +102,15 @@ GET /recommend?movie=Avatar
 
 ---
 
-## 💡 Future Improvements
+## ⚠️ Limitations
+
+- Recommendations depend only on textual features
+- No user personalization
+- Accuracy can be improved with more features
+
+---
+
+## 💡 Future Scope
 - Add more features (cast, director, keywords)
 - Improve recommendation accuracy
 - Add frontend UI
