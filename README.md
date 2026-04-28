@@ -35,6 +35,12 @@ movie-recommender/
 
 ---
 
+## 🏗️ Architecture
+
+User → FastAPI → TF-IDF Vectorization → Cosine Similarity → Recommendations
+
+---
+
 ## ⚙️ How It Works
 1. Clean and preprocess movie data  
 2. Convert text data into vectors using TF-IDF  
@@ -62,6 +68,31 @@ uvicorn app.main:app --reload
 ## 📊 Example API
 
 GET /recommend?movie=Avatar
+
+---
+
+## 📸 Sample Output
+
+**Request:**
+GET /recommend?movie=Avatar
+
+**Response:**
+[
+  "Apollo 18",
+  "Beowulf",
+  "The Helix... Loaded",
+  "The American",
+  "The Adventures of Pluto Nash"
+]
+
+---
+
+## 🧠 Key Learnings
+
+- Built an end-to-end ML pipeline
+- Performed feature engineering using TF-IDF
+- Implemented cosine similarity for recommendations
+- Deployed ML system using FastAPI
 
 ---
 
